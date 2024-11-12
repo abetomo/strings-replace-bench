@@ -1,5 +1,11 @@
 name: bench
-on: push
+on:
+  push:
+    branches:
+      - "*"
+    tags:
+      - "*"
+  pull_request:
 jobs:
   bench:
     strategy:
